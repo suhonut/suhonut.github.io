@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gowun Dodum', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.date-time {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+}
+
+.cake-icon {
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.baby-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+.gallery {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+.gallery h2 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.gallery-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-slide {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 225px;
+    scroll-snap-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: #0d9488;
+}
+
+.location {
+    margin: 4rem 0;
+    padding: 0 20px;
+}
+
+.location h2 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+.map-wrapper {
+    width: 100%;
+    height: 250px;
+    margin: 1.5rem 0;
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.address {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.transport {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.transport strong {
+    color: #0d9488;
+    display: inline-block;
+}
+.transport strong.transport-head {
+    font-size:1.2rem;
+}
+
+.decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.1;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='3' fill='%230d9488'/%3E%3C/svg%3E");
+}
