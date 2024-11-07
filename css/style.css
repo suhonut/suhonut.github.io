@@ -249,7 +249,7 @@ td:not(:empty):hover:not(.highlight) {
 
 .nav-button {
     border: none;
-    background-color: none;
+    background: none;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
