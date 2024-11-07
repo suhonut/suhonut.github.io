@@ -76,4 +76,23 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('mouseleave', () => {
         isDragging = false;
     });
+
+    // naver map
+    loadMap();
 });
+
+const loadMap = () => {
+    const mapOpts = {
+        center: new naver.maps.LatLng(37.595732, 127.172496),
+        zoom: 16,
+    }
+
+    // map
+    const map = new naver.maps.Map(document.getElementById('map'), mapOpts);
+
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.595732, 127.172496),
+        map: map,
+        animation: naver.maps.Animation.BOUNCE
+    });
+}
