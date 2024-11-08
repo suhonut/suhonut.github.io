@@ -56,11 +56,6 @@ h1 .rotateName:nth-child(even) {
     line-height: 1.8;
 }
 
-.cake-icon {
-    width: 60px;
-    height: 60px;
-}
-
 .divider {
     width: 30px;
     height: 1px;
@@ -143,9 +138,10 @@ td:not(:empty):hover:not(.highlight) {
 }
 
 .gallery {
-    padding: 2rem 0;
+    padding: 2rem;
     background: #f9f9f9;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 .gallery h2 {
@@ -161,54 +157,22 @@ td:not(:empty):hover:not(.highlight) {
     position: relative;
 }
 
-.gallery-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    gap: 15px;
-    padding: 0 20px;
-}
-
-.gallery-slider::-webkit-scrollbar {
-    display: none;
-}
-
-.gallery-slide {
-    flex: 0 0 300px;
-    width: 300px;
-    height: 225px;
-    scroll-snap-align: center;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.gallery-slide img {
+.swiper {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.gallery-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 8px;
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
 }
 
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dot.active {
-    background: #0d9488;
+.swiper-slide img {
+    display: block;
+    width: 100%;
 }
 
 .location {
