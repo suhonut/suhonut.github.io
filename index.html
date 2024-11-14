@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수호의 첫 생일을 축하해주세요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="main-visual">
+            <div class="main-content">
+                <h1>
+                    <!--
+                    <span class="rotateName">수</span>
+                    <span class="rotateName">호</span>
+                    -->
+                    <strong>수호</strong>의 첫 번째 생일
+                </h1>
+
+                <img src="images/m.jpg" alt="아기 사진" class="baby-photo">
+
+                <p>
+                    첫 돌을 맞이한 수호의 특별한 날<br>
+                    소중한 분들과 함께 나누고 싶습니다
+                </p>
+
+                <div class="divider"></div>
+
+                <div class="gallery">
+                    <h2>수호의 첫 1년</h2>
+                    <div class="gallery-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/g1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/g2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/g3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/g4.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="date-time">2025년 2월 15일 토요일<br>오후 5시 30분</div>
+
+                <div class="calendar">
+                    <div class="month-header">2025년 2월</div>
+                    <table>
+                        <tr>
+                            <th class="sunday">일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th class="weekend">토</th>
+                        </tr>
+                        <tr>
+                            <td class="empty"></td>
+                            <td class="empty"></td>
+                            <td class="empty"></td>
+                            <td class="empty"></td>
+                            <td class="empty"></td>
+                            <td class="empty"></td>
+                            <td class="weekend">1</td>
+                        </tr>
+                        <tr>
+                            <td class="sunday">2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td class="weekend">8</td>
+                        </tr>
+                        <tr>
+                            <td class="sunday">9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td class="weekend highlight">15</td>
+                        </tr>
+                        <tr>
+                            <td class="sunday">16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td class="weekend">22</td>
+                        </tr>
+                        <tr>
+                            <td class="sunday">23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td class="weekend">29</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="location">
+                    <h2>오시는 길</h2>
+                    <div class="map-wrapper" id="map"></div>
+                    <div class="address">
+                        경기 남양주시 다산지금로 202 한강DIMC테라타워 <br>
+                        B1층 다이닝몽드
+                    </div>
+                    <div class="nav-container">
+                        <button class="nav-button" onclick="window.open('https://naver.me/5MDgBIBu')">
+                            <img src="images/nmap.png" alt="네이버맵">
+                        </button>
+                        <button class="nav-button" onclick="window.open('https://tmap.life/bd08347d')">
+                            <img src="images/tmap.svg" alt="티맵">
+                        </button>
+                        <button class="nav-button" onclick="window.open('https://kko.kakao.com/0tIsmpESS2')">
+                            <img src="images/kakaomap.png" alt="카카오맵">
+                        </button>
+                    </div>
+                    <div class="transport">
+                        <p><strong class="transport-head">🚗 주차</strong></p>
+                        <p>📢 <b>건물을 끼고 P턴 방향으로 오시면 주차장 입구입니다.</b></p>
+                        <p>건물 내 지하주차장 3시간 무료</p>
+                        <p>지하 2,3,4층 <strong>H구역 인근 B-4 게이트</strong>에서 엘리베이터를 타고 지하1층으로 오시면 됩니다.</p>
+                        <br>
+                        <p><strong class="transport-head">🚌 버스</strong></p>
+                        <p>도농역, 동화중고교, 부영A > 수석토성입구 하차</p>
+                        <p>76, 38, 166-1, 1100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zdxr7p82cc"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
