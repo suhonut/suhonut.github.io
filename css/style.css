@@ -285,11 +285,3 @@ td:not(:empty):hover:not(.highlight) {
         left: 77%;
     }
 }
-
-.confetti {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 70%;
-}
