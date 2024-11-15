@@ -276,6 +276,7 @@ td:not(:empty):hover:not(.highlight) {
 
 @media (max-width: 400px) {
     .galand-container {
+        height: 70px;
         margin-bottom: 0;
     }
 }
