@@ -266,10 +266,16 @@ td:not(:empty):hover:not(.highlight) {
 
 .galand-container {
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-image: url(../images/galand.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top;
     background-repeat: no-repeat;
     margin-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+    .galand-container {
+        margin-bottom: 0;
+    }
 }
