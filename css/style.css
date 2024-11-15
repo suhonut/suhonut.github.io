@@ -278,10 +278,4 @@ td:not(:empty):hover:not(.highlight) {
     .galand-container {
         margin-bottom: 0;
     }
-
-    .confetti {
-        width: 75px;
-        height: 75px;
-        left: 77%;
-    }
 }
