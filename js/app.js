@@ -17,10 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	// LightGallery 초기화
-	lightGallery(document.getElementById('lightgallery'), {
+	lightGallery(document.getElementById('gallery'), {
 		selector: 'a',
 		thumbnail: true,
 		download: false
+	});
+
+	// 더블클릭 동작 방지
+	document.getElementById('gallery').addEventListener('dblclick', (event) => {
+		event.preventDefault(); // 기본 더블클릭 동작 방지
 	});
 });
 
