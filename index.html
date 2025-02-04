@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/css/lightgallery.css">
     <script>
         // 1-20, preload
         const numbers = Array.from({ length: 20 }, (_, i) => i + 1);
@@ -130,31 +131,32 @@
                     <h2>수호의 첫 1년</h2>
                     <div class="gallery-container">
                         <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="images/g1.png"/></div>
-                                <div class="swiper-slide"><img src="images/g2.png"/></div>
-                                <div class="swiper-slide"><img src="images/g3.png"/></div>
-                                <div class="swiper-slide"><img src="images/g4.png"/></div>
-                                <div class="swiper-slide"><img src="images/g5.png"/></div>
-                                <div class="swiper-slide"><img src="images/g6.png"/></div>
-                                <div class="swiper-slide"><img src="images/g7.png"/></div>
-                                <div class="swiper-slide"><img src="images/g8.png"/></div>
-                                <div class="swiper-slide"><img src="images/g9.png"/></div>
-                                <div class="swiper-slide"><img src="images/g10.png"/></div>
-                                <div class="swiper-slide"><img src="images/g11.png"/></div>
-                                <div class="swiper-slide"><img src="images/g12.png"/></div>
-                                <div class="swiper-slide"><img src="images/g13.png"/></div>
-                                <div class="swiper-slide"><img src="images/g14.png"/></div>
-                                <div class="swiper-slide"><img src="images/g15.png"/></div>
-                                <div class="swiper-slide"><img src="images/g16.png"/></div>
-                                <div class="swiper-slide"><img src="images/g17.png"/></div>
-                                <div class="swiper-slide"><img src="images/g18.png"/></div>
-                                <div class="swiper-slide"><img src="images/g19.png"/></div>
-                                <div class="swiper-slide"><img src="images/g20.png"/></div>
+                            <div class="swiper-wrapper" id="lightgallery">
+                                <a href="images/g1.png" class="swiper-slide"><img src="images/g1.png"/></a>
+                                <a href="images/g2.png" class="swiper-slide"><img src="images/g2.png"/></a>
+                                <a href="images/g3.png" class="swiper-slide"><img src="images/g3.png"/></a>
+                                <a href="images/g4.png" class="swiper-slide"><img src="images/g4.png"/></a>
+                                <a href="images/g5.png" class="swiper-slide"><img src="images/g5.png"/></a>
+                                <a href="images/g6.png" class="swiper-slide"><img src="images/g6.png"/></a>
+                                <a href="images/g7.png" class="swiper-slide"><img src="images/g7.png"/></a>
+                                <a href="images/g8.png" class="swiper-slide"><img src="images/g8.png"/></a>
+                                <a href="images/g9.png" class="swiper-slide"><img src="images/g9.png"/></a>
+                                <a href="images/g10.png" class="swiper-slide"><img src="images/g10.png"/></a>
+                                <a href="images/g11.png" class="swiper-slide"><img src="images/g11.png"/></a>
+                                <a href="images/g12.png" class="swiper-slide"><img src="images/g12.png"/></a>
+                                <a href="images/g13.png" class="swiper-slide"><img src="images/g13.png"/></a>
+                                <a href="images/g14.png" class="swiper-slide"><img src="images/g14.png"/></a>
+                                <a href="images/g15.png" class="swiper-slide"><img src="images/g15.png"/></a>
+                                <a href="images/g16.png" class="swiper-slide"><img src="images/g16.png"/></a>
+                                <a href="images/g17.png" class="swiper-slide"><img src="images/g17.png"/></a>
+                                <a href="images/g18.png" class="swiper-slide"><img src="images/g18.png"/></a>
+                                <a href="images/g19.png" class="swiper-slide"><img src="images/g19.png"/></a>
+                                <a href="images/g20.png" class="swiper-slide"><img src="images/g20.png"/></a>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+                    <div class="pswp"></div>
                 </div>
 
                 <div class="divider"></div>
@@ -197,6 +199,7 @@
 
     <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zdxr7p82cc"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery/lightgallery.umd.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
