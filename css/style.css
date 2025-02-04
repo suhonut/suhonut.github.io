@@ -19,12 +19,60 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='3' fill='%230d9488' opacity='0.1'/%3E%3C/svg%3E");
 }
 
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: opacity 1.5s ease;
+}
+
+.loading-text {
+    font-size: 1.5rem;
+    color: #0d9488;
+    margin-top: 20px;
+    animation: fade 2s infinite;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0d9488;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .container {
     max-width: 768px;
     margin: 0 auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
 }
 
 h1 {

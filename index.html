@@ -7,9 +7,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
+        // 1-20, preload
+        const numbers = Array.from({ length: 20 }, (_, i) => i + 1);
+        numbers.forEach(num => {
+            const img = new Image();
+            img.src = `images/g${num}.png`;
+        });
+
+        // 로딩 후 인트로를 제거하고 초대장을 표시
+        setTimeout(() => {
+            const intro = document.getElementById('intro');
+            const content = document.getElementById('content');
+
+            intro.style.opacity = '0';
+            setTimeout(() => {
+                intro.style.display = 'none';
+                content.style.display = 'block';
+                // naver map
+                loadMap();
+            }, 1000); // 페이드아웃 후 제거
+        }, 1000); // 1초 대기 후 초대장 표시
+    </script>
 </head>
 <body>
-    <div class="container">
+    <div class="intro-container" id="intro">
+        <div class="spinner"></div>
+        <p class="loading-text">초대장을 불러오고 있습니다...</p>
+    </div>
+
+    <div class="container" id="content">
         <div class="main-visual">
             <div class="main-content">
                 <div class="galand-container"></div>
@@ -103,7 +130,28 @@
                     <h2>수호의 첫 1년</h2>
                     <div class="gallery-container">
                         <div class="swiper mySwiper">
-                            <div class="swiper-wrapper" id="gallery-body"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/g1.png"/></div>
+                                <div class="swiper-slide"><img src="images/g2.png"/></div>
+                                <div class="swiper-slide"><img src="images/g3.png"/></div>
+                                <div class="swiper-slide"><img src="images/g4.png"/></div>
+                                <div class="swiper-slide"><img src="images/g5.png"/></div>
+                                <div class="swiper-slide"><img src="images/g6.png"/></div>
+                                <div class="swiper-slide"><img src="images/g7.png"/></div>
+                                <div class="swiper-slide"><img src="images/g8.png"/></div>
+                                <div class="swiper-slide"><img src="images/g9.png"/></div>
+                                <div class="swiper-slide"><img src="images/g10.png"/></div>
+                                <div class="swiper-slide"><img src="images/g11.png"/></div>
+                                <div class="swiper-slide"><img src="images/g12.png"/></div>
+                                <div class="swiper-slide"><img src="images/g13.png"/></div>
+                                <div class="swiper-slide"><img src="images/g14.png"/></div>
+                                <div class="swiper-slide"><img src="images/g15.png"/></div>
+                                <div class="swiper-slide"><img src="images/g16.png"/></div>
+                                <div class="swiper-slide"><img src="images/g17.png"/></div>
+                                <div class="swiper-slide"><img src="images/g18.png"/></div>
+                                <div class="swiper-slide"><img src="images/g19.png"/></div>
+                                <div class="swiper-slide"><img src="images/g20.png"/></div>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
