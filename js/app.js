@@ -20,7 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	lightGallery(document.getElementById('gallery'), {
 		selector: 'a',
 		thumbnail: true,
-		download: false
+		download: false,
+		mobileSettings: {
+			closable: true,
+			showCloseIcon: true,
+			controls: false
+		}
 	});
 
 	// 더블클릭 동작 방지
